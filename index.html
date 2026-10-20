@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>TODO</h1>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <img src = "images/icon-moon.svg">
+            </button>
+        </header>
+
+        <form class="input-text">
+            <button class="add-todo" type="submit" aria-label="Add Todo"></button>
+            <input type="text" id="todo-today" placeholder="Create a New To do...." aria-label="Todo Input">
+        </form>
+
+        <section class="todo-listSection">
+            <ul class="todo-list">
+            </ul>
+            <footer class="footer-info">
+                <p class="todo-remaining">5 items left</p>
+                <ul class="todo-categories desktop-filter">
+                    <li><button class="filter active" data-filter="all">All</button></li>
+                    <li><button class="filter" data-filter="active">Active</button></li>
+                    <li><button class="filter" data-filter="completed">Completed</button></li>
+                </ul>
+                <button class="clear-completed">Clear Completed</button>
+            </footer>  
+        </section>
+
+        <ul class="todo-categories mobile-filter">
+            <li><button class="filter active" data-filter="all">All</button></li>
+            <li><button class="filter" data-filter="active">Active</button></li>
+            <li><button class="filter" data-filter="completed">Completed</button></li>
+        </ul>
+
+        <footer class="drag-drop">
+            <p>Drag and Drop to Reorder List</p>
+        </footer>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
